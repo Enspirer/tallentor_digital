@@ -60,7 +60,7 @@
                 </div>
             </form>
         </div>
-        <div class="cta-section">
+        <div class="cta-section" style="position: fixed;z-index: 10000000;">
             <div class="cta-block short" cta-block>
                 <div class="inner-wrapper">
                     <div class="content-block">
