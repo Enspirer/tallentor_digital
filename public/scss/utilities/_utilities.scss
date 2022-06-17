@@ -1,0 +1,21 @@
+@mixin overlay($color, $opacity) {
+    background-color: rgba($color: $color, $alpha: $opacity);
+}
+
+@mixin text_overflow($lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
+
+.btn-fill {
+    border: none;
+    background: linear-gradient(to right, #4E68FA, #4F39E9);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 300;
+    color: white;
+}

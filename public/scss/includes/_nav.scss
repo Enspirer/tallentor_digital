@@ -1,0 +1,44 @@
+nav {
+    padding: 1rem 0;
+    background-color: #f8f6fe;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    .nav-trigger {
+        color: #333;
+        font-size: 1.75rem;
+        position: absolute;
+        top: 15px;
+        right: 15%;
+        display: none;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(0, -50%);
+        transition: all .3s ease-in-out;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: .9rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+            .bi {
+                font-size: 1rem;
+                color: #4F3BEA;
+            }
+        }
+    }
+}
