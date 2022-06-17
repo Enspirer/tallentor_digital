@@ -35,4 +35,10 @@ Breadcrumbs::for('admin.contactus_thanks', function ($trail) {
     $trail->push('Contact Us Thanks Email', route('admin.contactus_thanks'));
 });
 
+Breadcrumbs::for('admin.contact_us.index', function ($trail) {
+    $trail->push('Contact Us', route('admin.contact_us.index'));
+});
+Breadcrumbs::for('admin.contact_us.edit', function ($trail) {
+    $trail->push('Status', route('admin.contact_us.edit',1));
+});
 

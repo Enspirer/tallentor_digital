@@ -28,15 +28,24 @@
             </div>
         </div>
         <div class="form-block">
-            <form action="">
+            <form action="{{route('frontend.contact_us.store')}}" method="post" class="pt-4 px-4 pb-3" style="background-color: white" enctype="multipart/form-data">
+            {{csrf_field()}}
+              
                 <h2>Best Digital Marketing <br>Agency in UAE</h2>
                 <h1>Contact Us Today!</h1>
+
+                @if(session()->has('error'))
+                    <div class="alert alert-danger">
+                        {{ session()->get('error') }}
+                    </div>
+                @endif
+
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-12">
                         <div class="g-recaptcha hero-recaptcha" data-callback="checked"
@@ -44,7 +53,7 @@
                     </div>
                     <div class="col-12">
                         <div class="input-wrapper">
-                            <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact">
+                            <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                             <button type="submit" class="cta-btn btn-fill">Submit</button>
                         </div>
                     </div>
@@ -223,9 +232,40 @@
         <img src="images/landing-page/home/contact.png" alt="">
     </section>
 
+
+@if(\Session::has('success'))
+    <div class="modal fade form-submit-modal" id="overlay" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" style="width: 90%; max-width: 600px; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%) !important;">
+            <div class="modal-content" style="background: linear-gradient(60deg, #E4F2FB, #9ACDFF); border: 2px solid #0C75FF; border-radius: 15px;">
+                <div class="modal-body" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px;">
+                    <i class="bi bi-x-lg" data-bs-dismiss="modal" style="position: absolute; top: -15px; right: -15px; color: #fff; font-size: 16px; background-color: rgba(255, 255, 255, 0.5); width: 35px; height: 35px; border-radius: 50%; display: flex; flex-direction: row; justify-content: center; align-items: center; backdrop-filter: blur(5px);"></i>
+                    <div class="image-block">
+                        <img src="{{url('images/success.png')}}" alt="">
+                    </div>
+                    <div class="content-block">
+                        <div class="title" style="font-size: 40px; color: #0C75FF; font-weight: 400; margin-bottom: 10px;">Success !</div>
+                        <p class="text" style="font-size: 16px; ont-weight 300; margin: 0; color: #333;">Your message submitted successfully.</p>
+                        <p class="text" style="font-size: 16px; ont-weight 300; margin: 0; color: #333;">One of our volunteers will be in touch shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+
+
 @endsection
 
 @push('after-scripts')
+
+<script>
+    $(window).on('load', function () {
+        $('#overlay').modal('show');
+    });
+    $("#close-btn").click(function () {
+        $('#overlay').modal('hide');
+    });
+</script>
 
     <script>
         const ctaBlock = document.querySelectorAll('[cta-block]')

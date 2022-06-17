@@ -5,7 +5,12 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Frontend\Contact\SendContactRequest;
 use App\Mail\Frontend\Contact\SendContact;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
+use DB;
+use App\Models\ContactUs;
+use Mail;
+use \App\Mail\ContactUsMail;
+use App\Models\Auth\User;
 
 /**
  * Class ContactController.
@@ -19,6 +24,29 @@ class ContactController extends Controller
     {
         return view('frontend.contact');
     }
+
+    public function store(Request $request)
+    {        
+        // dd($request); 
+
+        if($request->get('g-recaptcha-response') == null){
+            return back()->with('error', 'Error!.....Please fill reCAPTCHA!');
+        }  
+   
+        $add = new ContactUs;
+
+        $add->name=$request->name;
+        $add->email=$request->email;
+        $add->phone_number=$request->contact;
+        $add->status='Pending'; 
+
+        $add->save();
+       
+        return back()->with([
+            'success' => 'success'
+        ]);   
+    }
+
 
     /**
      * @param SendContactRequest $request
