@@ -39,6 +39,12 @@ Breadcrumbs::for('admin.contact_us.index', function ($trail) {
     $trail->push('Contact Us', route('admin.contact_us.index'));
 });
 Breadcrumbs::for('admin.contact_us.edit', function ($trail) {
-    $trail->push('Status', route('admin.contact_us.edit',1));
+    $trail->push('Contact Us Status', route('admin.contact_us.edit',1));
 });
 
+Breadcrumbs::for('admin.partnership_inqiries.index', function ($trail) {
+    $trail->push('Partnership Inqiries', route('admin.partnership_inqiries.index'));
+});
+Breadcrumbs::for('admin.partnership_inqiries.edit', function ($trail) {
+    $trail->push('Partnership Inqiries Status', route('admin.partnership_inqiries.edit',1));
+});

@@ -90,24 +90,29 @@
                 <div class="inner-wrapper">
                     <div class="content-block">
                         <div class="form-wrapper">
-                            <form action="">
+                            <form action="{{route('frontend.contact_us_sidebar.store')}}" method="post" enctype="multipart/form-data">
+                            {{csrf_field()}}
+              
                                 <h2>Ready to start your project ?</h2>
+
+                                @if(session()->has('error_sidebar'))
+                                    <div class="alert alert-danger">
+                                        {{ session()->get('error_sidebar') }}
+                                    </div>
+                                @endif
+
                                 <div class="row g-3">
                                     <div class="col-12">
-                                        <input type="name" class="form-control" id="name" name="name"
-                                            placeholder="Full Name">
+                                        <input type="name" class="form-control" id="name" name="name" placeholder="Full Name" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" class="form-control" id="contact" name="contact"
-                                            placeholder="Contact">
+                                        <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                                     </div>
                                     <div class="col-12">
-                                        <div class="g-recaptcha" data-callback="checked"
-                                            data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                                        <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="cta-btn btn-fill">Submit</button>
@@ -204,25 +209,30 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h3>Discuss a Partnership</h3>
-                    <form action="">
+                    <form action="{{route('frontend.partnership.store')}}" method="post" enctype="multipart/form-data">
+                    {{csrf_field()}}
+              
+                        @if(session()->has('error_partnership'))
+                            <div class="alert alert-danger">
+                                {{ session()->get('error_partnership') }}
+                            </div>
+                        @endif
+
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control" id="contact" name="contact"
-                                    placeholder="Contact">
+                                <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" id="message" name="message" rows="4"
-                                    placeholder="Message"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <div class="g-recaptcha" data-callback="checked"
-                                    data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                                <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                             </div>
                             <div class="col-12 mt-5">
                                 <button type="submit" class="cta-btn btn-fill w-100">Submit</button>
@@ -248,7 +258,7 @@
                     <div class="content-block">
                         <div class="title" style="font-size: 40px; color: #0C75FF; font-weight: 400; margin-bottom: 10px;">Success !</div>
                         <p class="text" style="font-size: 16px; ont-weight 300; margin: 0; color: #333;">Your message submitted successfully.</p>
-                        <p class="text" style="font-size: 16px; ont-weight 300; margin: 0; color: #333;">One of our volunteers will be in touch shortly.</p>
+                        <p class="text" style="font-size: 16px; ont-weight 300; margin: 0; color: #333;">One of our agent will be in touch shortly.</p>
                     </div>
                 </div>
             </div>

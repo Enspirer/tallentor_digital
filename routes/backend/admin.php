@@ -5,6 +5,7 @@ use App\Http\Controllers\Backend\FileManagerController;
 use App\Http\Controllers\Backend\SettingsController;
 use App\Http\Controllers\Backend\ModuleExplorerController;
 use App\Http\Controllers\Backend\ContactUsController;
+use App\Http\Controllers\Backend\PartnershipInqiriesController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -44,3 +45,13 @@ Route::get('contact_us/getdetails', [ContactUsController::class, 'getDetails'])-
 Route::get('contact_us/edit/{id}', [ContactUsController::class, 'edit'])->name('contact_us.edit');
 Route::post('contact_us/update', [ContactUsController::class, 'update'])->name('contact_us.update');
 Route::get('contact_us/delete/{id}', [ContactUsController::class, 'destroy'])->name('contact_us.destroy');
+
+Route::get('partnership_inqiries', [PartnershipInqiriesController::class, 'index'])->name('partnership_inqiries.index');
+Route::get('partnership_inqiries/getdetails', [PartnershipInqiriesController::class, 'getDetails'])->name('partnership_inqiries.getDetails');
+Route::get('partnership_inqiries/edit/{id}', [PartnershipInqiriesController::class, 'edit'])->name('partnership_inqiries.edit');
+Route::post('partnership_inqiries/update', [PartnershipInqiriesController::class, 'update'])->name('partnership_inqiries.update');
+Route::get('partnership_inqiries/delete/{id}', [PartnershipInqiriesController::class, 'destroy'])->name('partnership_inqiries.destroy');
+
+
+
+

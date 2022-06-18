@@ -8,8 +8,10 @@ use App\Mail\Frontend\Contact\SendContact;
 use Illuminate\Http\Request;
 use DB;
 use App\Models\ContactUs;
+use App\Models\PartnershipInqiries;
 use Mail;
 use \App\Mail\ContactUsMail;
+use \App\Mail\PartnershipInqiriesMail;
 use App\Models\Auth\User;
 
 /**
@@ -41,6 +43,77 @@ class ContactController extends Controller
         $add->status='Pending'; 
 
         $add->save();
+
+        $details = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->contact
+        ];
+
+        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
+       
+        return back()->with([
+            'success' => 'success'
+        ]);   
+    }
+
+    public function contact_us_sidebar_store(Request $request)
+    {        
+        // dd($request); 
+
+        if($request->get('g-recaptcha-response') == null){
+            return back()->with('error_sidebar', 'Error!.....Please fill reCAPTCHA!');
+        }  
+   
+        $add = new ContactUs;
+
+        $add->name=$request->name;
+        $add->email=$request->email;
+        $add->phone_number=$request->contact;
+        $add->status='Pending'; 
+
+        $add->save();
+
+        $details = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->contact
+        ];
+
+        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
+       
+        return back()->with([
+            'success' => 'success'
+        ]);   
+    }
+
+    
+    public function partnership_store(Request $request)
+    {        
+        // dd($request); 
+
+        if($request->get('g-recaptcha-response') == null){
+            return back()->with('error_partnership', 'Error!.....Please fill reCAPTCHA!');
+        }  
+   
+        $add = new PartnershipInqiries;
+
+        $add->name=$request->name;
+        $add->email=$request->email;
+        $add->phone_number=$request->contact;
+        $add->message=$request->message;
+        $add->status='Pending'; 
+
+        $add->save();
+
+        $details = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->contact,
+            'message' => $request->message
+        ];
+
+        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new PartnershipInqiriesMail($details));
        
         return back()->with([
             'success' => 'success'

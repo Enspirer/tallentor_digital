@@ -1,10 +1,10 @@
 @extends('backend.layouts.app')
 
-@section('title', __('Status Status'))
+@section('title', __('Partnership Inqiries Status'))
 
 @section('content')
     
-    <form action="{{route('admin.contact_us.update')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.partnership_inqiries.update')}}" method="post" enctype="multipart/form-data">
         {{csrf_field()}}
         <div class="row">
             <div class="col-12 p-1">
@@ -20,15 +20,19 @@
                                             <tbody>
                                                 <tr>
                                                     <td width="14%" style="font-weight: 600; font-size:16px;">Name:</td>
-                                                    <td style="font-size:16px;">{{ $contact_us->name }}</td>
+                                                    <td style="font-size:16px;">{{ $partnership_inqiries->name }}</td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: 600; font-size:16px;">Email:</td>
-                                                    <td style="font-size:16px;">{{ $contact_us->email }}</td>
+                                                    <td style="font-size:16px;">{{ $partnership_inqiries->email }}</td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-weight: 600; font-size:16px;">Phone Number:</td>
-                                                    <td style="font-size:16px;">{{ $contact_us->phone_number }}</td>
+                                                    <td style="font-size:16px;">{{ $partnership_inqiries->phone_number }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: 600; font-size:16px;">Message:</td>
+                                                    <td style="font-size:16px;">{{ $partnership_inqiries->message }}</td>
                                                 </tr>
                                             </tbody>                                            
                                         </table>
@@ -38,9 +42,9 @@
                             </div>                            
 
                             <div class="mt-5 text-right">
-                                <input type="hidden" name="hidden_id" value="{{ $contact_us->id }}"/>
-                                <a href="{{route('admin.contact_us.index')}}" type="button" class="btn rounded-pill text-light px-4 py-2 me-2 btn-primary">Back</a>
-                                @if($contact_us->status == 'Seen')
+                                <input type="hidden" name="hidden_id" value="{{ $partnership_inqiries->id }}"/>
+                                <a href="{{route('admin.partnership_inqiries.index')}}" type="button" class="btn rounded-pill text-light px-4 py-2 me-2 btn-primary">Back</a>
+                                @if($partnership_inqiries->status == 'Seen')
                                 @else
                                 <input type="submit" class="btn rounded-pill text-light px-4 py-2 ms-2 btn-success" value="Seen" />
                                 @endif

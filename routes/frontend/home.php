@@ -14,6 +14,8 @@ use App\Http\Controllers\Frontend\User\ProfileController;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact_us/store', [ContactController::class, 'store'])->name('contact_us.store');
+Route::post('contact_us_sidebar/store', [ContactController::class, 'contact_us_sidebar_store'])->name('contact_us_sidebar.store');
+Route::post('partnership/store', [ContactController::class, 'partnership_store'])->name('partnership.store');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 Route::post('/aiz-uploader', [AizUploadController::class, 'show_uploader']);
