@@ -46,20 +46,20 @@
                         <div class="social-media">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a href="https://www.facebook.com/tallentor/" class="nav-link"
-                                        target="_blank"><i class="bi bi-facebook"></i></a>
+                                        target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://www.linkedin.com/company/tallentor/ "
-                                        class="nav-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                        class="nav-link" target="_blank"  rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
                                 </li>
                                 <li class="nav-item"><a
                                         href="https://www.youtube.com/channel/UCwJgWOtpffBLBbYCgGtieVw"
-                                        class="nav-link" target="_blank"><i class="bi bi-youtube"></i></a>
+                                        class="nav-link" target="_blank"  rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://www.instagram.com/tallentor/" class="nav-link"
-                                        target="_blank"><i class="bi bi-instagram"></i></a>
+                                        target="_blank"  rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://twitter.com/tallentor" class="nav-link"
-                                        target="_blank"><i class="bi bi-twitter"></i></a>
+                                        target="_blank"  rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
                                 </li>
                             </ul>
                         </div>
