@@ -18,6 +18,8 @@
         left: 60%;
         width: 70px;
         opacity: 0.7;
+        animation: particle_animation 40s ease-in-out alternate infinite;
+        animation-delay: 5s;
     }
 
     .particle-2 {
@@ -25,6 +27,8 @@
         top: 54%;
         left: 62%;
         width: 40px;
+        animation: particle_animation 30s ease-in-out alternate infinite;
+        animation-delay: 2s;
     }
 
     .particle-3 {
@@ -32,6 +36,7 @@
         bottom: 15%;
         left: 15%;
         width: 60px;
+        animation: particle_animation 20s ease-in-out alternate infinite;
     }
 
     .form-block {
@@ -81,11 +86,59 @@
                 transform: translate(0, -50%);
                 width: 40%;
             }
+
+            .captcha-modal {
+                background-color: #fff;
+                padding: 1.5rem 2rem;
+                border-radius: 10px;
+                text-align: center;
+                position: absolute;
+                transform: scale(0.8);
+                opacity: 0;
+                pointer-events: none;
+                bottom: 0;
+                right: -4%;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+                z-index: 9999;
+
+                &.show {
+                    opacity: 1;
+                    pointer-events: all;
+                    transform: scale(1);
+                    transition: all 0.3s ease;
+                }
+
+                &.hide {
+                    opacity: 0;
+                    pointer-events: none;
+                    transform: scale(0.8);
+                    transition: all 0.3s ease;
+                }
+
+                .bi {
+                    font-size: 1.5rem;
+                    color: #333;
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    pointer: cursor;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                }
+
+                .cta-btn {
+                    margin-top: 1rem;
+                    position: unset;
+                    transform: unset;
+                }
+            }
         }
     }
 
     .cta-section {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 0;
         transform: translate(0, -50%);
@@ -93,6 +146,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+        z-index: 999;
 
         .cta-block {
             background-color: rgba($color: #000D81, $alpha: 0.85);
@@ -330,6 +384,8 @@
             right: -25px;
             bottom: -25px;
             z-index: 0;
+            animation: particle_animation 30s ease-in-out alternate infinite;
+            animation-delay: 5s;
         }
     }
 
@@ -425,6 +481,30 @@
         height: 100%;
         max-width: 45%;
         object-fit: cover;
+    }
+}
+
+@keyframes particle_animation {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    20% {
+        transform: translate3d(-4rem, -4rem, 0);
+    }
+
+    40% {
+        transform: translate3d(8rem, 4rem, 0);
+    }
+
+    60% {
+        transform: translate3d(8rem, -4rem, 0);
+    }
+
+    80% {
+        transform: translate3d(-8rem, 4rem, 0);
     }
 }
 

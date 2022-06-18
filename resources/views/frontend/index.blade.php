@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="form-block">
-            <form action="{{route('frontend.contact_us.store')}}" method="post" class="pt-4 px-4 pb-3" style="background-color: white" enctype="multipart/form-data">
+            <form action="{{route('frontend.contact_us.store')}}" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
               
                 <h2>Best Digital Marketing <br>Agency in UAE</h2>
@@ -48,26 +48,29 @@
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-12">
-                        <div class="g-recaptcha hero-recaptcha" data-callback="checked"
-                            data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
-                    </div>
-                    <div class="col-12">
                         <div class="input-wrapper">
+                            <div class="captcha-modal hide" id="captchaModal">
+                                <i class="bi bi-x-lg" captcha-modal-close></i>
+                                <p>Please click "<strong>Continue</strong>" to submit.</p>
+                                <div class="g-recaptcha hero-recaptcha" data-callback="checked"
+                                        data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                                <button type="submit" class="cta-btn btn-fill">Continue</button>
+                            </div>
                             <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
-                            <button type="submit" class="cta-btn btn-fill">Submit</button>
+                            <button type="button" class="cta-btn btn-fill" captcha-modal>Submit</button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="cta-section" style="position: fixed;z-index: 10000000;">
+        <div class="cta-section">
             <div class="cta-block short" cta-block>
                 <div class="inner-wrapper">
                     <div class="content-block">
                         <div class="title">Mobile</div>
                         <div class="tel">+971 583017648</div>
                     </div>
-                    <div class="head">
+                    <div class="head" cta-block-head>
                         <i class="bi bi-telephone-fill"></i>
                     </div>
                 </div>
@@ -78,7 +81,7 @@
                         <div class="title">WhatsApp</div>
                         <div class="tel">+971 583017648</div>
                     </div>
-                    <div class="head">
+                    <div class="head" cta-block-head>
                         <i class="bi bi-whatsapp"></i>
                     </div>
                 </div>
@@ -113,7 +116,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="head">
+                    <div class="head" cta-block-head>
                         <div class="wrapper">
                             <i class="bi bi-chevron-right"></i>
                             <p>Get in Touch</p>
@@ -269,18 +272,11 @@
 
     <script>
         const ctaBlock = document.querySelectorAll('[cta-block]')
+        const ctaBlockHead = document.querySelectorAll('[cta-block-head]')
 
-        ctaBlock.forEach((block) => {
-            block.addEventListener('click', () => {
-                ctaBlock.forEach((block) => {
-                    block.classList.remove('active')
-                })
-
-                block.classList.add('active')
-
-                setTimeout(() => {
-                    block.classList.remove('active')
-                }, 2500)
+        ctaBlockHead.forEach((head) => {
+            head.addEventListener('click', () => {
+                head.closest('[cta-block]').classList.toggle('active')
             })
         })
     </script>
@@ -301,6 +297,18 @@
         });
 
         heroSlider.mount();
+    </script>
+
+    <script>
+        document.querySelector('[captcha-modal]').addEventListener('click', () => {
+            document.getElementById('captchaModal').classList.remove('hide')
+            document.getElementById('captchaModal').classList.add('show')
+        })
+
+        document.querySelector('[captcha-modal-close]').addEventListener('click', () => {
+            document.getElementById('captchaModal').classList.remove('show')
+            document.getElementById('captchaModal').classList.add('hide')
+        })
     </script>
 
 @endpush
