@@ -1,7 +1,7 @@
 <nav>
     <div class="container">
         <a href="#" class="brand">
-            <img src="images/logo/tallentor.svg" alt="">
+            <img src="images/logo/tallentor.svg" alt="logo">
         </a>
         <i class="bi bi-list nav-trigger" nav-trigger></i>
         <div class="contacts">

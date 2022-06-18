@@ -5,7 +5,7 @@
                 <div class="links">
                     <div class="header">
                         <a href="{{url('/')}}" rel="noopener noreferrer">
-                            <img src="images/logo/tallentor.svg" alt="">
+                            <img src="images/logo/tallentor.svg" alt="logo">
                         </a>
                     </div>
                     <div class="body">
@@ -70,7 +70,7 @@
                 <div class="contact-info">
                     <div class="header">
                         <a href="https://web.whatsapp.com/send?phone=94760939990" target="_blank">
-                            <img src="images/landing-page/footer/footer-icon.png" alt="">
+                            <img src="images/landing-page/footer/footer-icon.png" alt="let's talk">
                             <div class="title">Let's Talk</div>
                         </a>
                     </div>
