@@ -5,23 +5,23 @@
 @section('content')
 
     <section class="home-hero">
-        <img src="images/landing-page/home/hero-ellipse.svg" alt="" class="hero-ellipse">
-        <img src="images/landing-page/home/particle.svg" alt="" class="particle-1">
-        <img src="images/landing-page/home/particle.svg" alt="" class="particle-2">
-        <img src="images/landing-page/home/particle.svg" alt="" class="particle-3">
+        <img src="images/landing-page/home/hero-ellipse.svg" alt="particle" class="hero-ellipse">
+        <img src="images/landing-page/home/particle.svg" alt="particle" class="particle-1">
+        <img src="images/landing-page/home/particle.svg" alt="particle" class="particle-2">
+        <img src="images/landing-page/home/particle.svg" alt="particle" class="particle-3">
         <div class="hero-slider">
             <i class="bi bi-three-dots"></i>
             <div class="splide" id="heroSlider">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="images/landing-page/home/slide-1.png" alt="" class="slide-img">
+                            <img src="images/landing-page/home/slide-1.png" alt="hero-slide" class="slide-img">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/landing-page/home/slide-1.png" alt="" class="slide-img">
+                            <img src="images/landing-page/home/slide-1.png" alt="hero-slide" class="slide-img">
                         </li>
                         <li class="splide__slide">
-                            <img src="images/landing-page/home/slide-1.png" alt="" class="slide-img">
+                            <img src="images/landing-page/home/slide-1.png" alt="hero-slide" class="slide-img">
                         </li>
                     </ul>
                 </div>
@@ -145,37 +145,37 @@
                         <button type="submit" class="cta-btn btn-fill">checkup</button>
                     </div>
                 </div>
-                <img src="images/landing-page/home/particle.svg" alt="">
+                <img src="images/landing-page/home/particle.svg" alt="particle">
             </div>
             <div class="title">Our Services</div>
             <div class="service-blocks">
                 <div class="block">
-                    <img src="images/landing-page/home/dm.png" alt="">
+                    <img src="images/landing-page/home/dm.png" alt="digital marketing">
                     <div class="card-title">Digital<br>Marketing</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/sd.png" alt="">
+                    <img src="images/landing-page/home/sd.png" alt="software development">
                     <div class="card-title">Software<br>Development</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/md.png" alt="">
+                    <img src="images/landing-page/home/md.png" alt="mobile app development">
                     <div class="card-title">Mobile App<br>Development</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/wad.png" alt="">
+                    <img src="images/landing-page/home/wad.png" alt="web application development">
                     <div class="card-title">Web Application<br>Development</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/ww.png" alt="">
+                    <img src="images/landing-page/home/ww.png" alt="WhatsApp widget">
                     <div class="card-title">WhatsApp<br>Widget</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/woa.png" alt="">
+                    <img src="images/landing-page/home/woa.png" alt="web optimizer app">
                     <div class="card-title">Web Optimizer<br>App</div>
                     <p>Experienced software developers to work individually</p>
                 </div>
@@ -242,7 +242,7 @@
                 </div>
             </div>
         </div>
-        <img src="images/landing-page/home/contact.png" alt="">
+        <img src="images/landing-page/home/contact.png" alt="contact background">
     </section>
 
 
@@ -253,7 +253,7 @@
                 <div class="modal-body" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 30px;">
                     <i class="bi bi-x-lg" data-bs-dismiss="modal" style="position: absolute; top: -15px; right: -15px; color: #fff; font-size: 16px; background-color: rgba(255, 255, 255, 0.5); width: 35px; height: 35px; border-radius: 50%; display: flex; flex-direction: row; justify-content: center; align-items: center; backdrop-filter: blur(5px);"></i>
                     <div class="image-block">
-                        <img src="{{url('images/success.png')}}" alt="">
+                        <img src="{{url('images/success.png')}}" alt="modal img">
                     </div>
                     <div class="content-block">
                         <div class="title" style="font-size: 40px; color: #0C75FF; font-weight: 400; margin-bottom: 10px;">Success !</div>

@@ -5,7 +5,7 @@
                 <div class="links">
                     <div class="header">
                         <a href="{{url('/')}}" rel="noopener noreferrer">
-                            <img src="images/logo/tallentor.svg" alt="">
+                            <img src="images/logo/tallentor.svg" alt="logo">
                         </a>
                     </div>
                     <div class="body">
@@ -46,20 +46,20 @@
                         <div class="social-media">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a href="https://www.facebook.com/tallentor/" class="nav-link"
-                                        target="_blank"><i class="bi bi-facebook"></i></a>
+                                        target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://www.linkedin.com/company/tallentor/ "
-                                        class="nav-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                        class="nav-link" target="_blank"  rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
                                 </li>
                                 <li class="nav-item"><a
                                         href="https://www.youtube.com/channel/UCwJgWOtpffBLBbYCgGtieVw"
-                                        class="nav-link" target="_blank"><i class="bi bi-youtube"></i></a>
+                                        class="nav-link" target="_blank"  rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://www.instagram.com/tallentor/" class="nav-link"
-                                        target="_blank"><i class="bi bi-instagram"></i></a>
+                                        target="_blank"  rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="https://twitter.com/tallentor" class="nav-link"
-                                        target="_blank"><i class="bi bi-twitter"></i></a>
+                                        target="_blank"  rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -70,7 +70,7 @@
                 <div class="contact-info">
                     <div class="header">
                         <a href="https://web.whatsapp.com/send?phone=94760939990" target="_blank">
-                            <img src="images/landing-page/footer/footer-icon.png" alt="">
+                            <img src="images/landing-page/footer/footer-icon.png" alt="let's talk">
                             <div class="title">Let's Talk</div>
                         </a>
                     </div>
