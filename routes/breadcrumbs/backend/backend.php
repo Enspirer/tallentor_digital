@@ -48,3 +48,10 @@ Breadcrumbs::for('admin.partnership_inqiries.index', function ($trail) {
 Breadcrumbs::for('admin.partnership_inqiries.edit', function ($trail) {
     $trail->push('Partnership Inqiries Status', route('admin.partnership_inqiries.edit',1));
 });
+
+Breadcrumbs::for('admin.webiste_checkout.index', function ($trail) {
+    $trail->push('Website Checkout', route('admin.webiste_checkout.index'));
+});
+Breadcrumbs::for('admin.webiste_checkout.view', function ($trail) {
+    $trail->push('Website Checkout View', route('admin.webiste_checkout.view',1));
+});

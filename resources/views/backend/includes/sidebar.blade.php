@@ -89,6 +89,13 @@
             @endif
 
             <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/webiste_checkout'))}}" href="{{ route('admin.webiste_checkout.index') }}">
+                    <i class="nav-icon fas fa-bars"></i>
+                    Website Checkout
+                </a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link {{active_class(Route::is('admin/contact_us'))}}" href="{{ route('admin.contact_us.index') }}">
                     <i class="nav-icon fas fa-comments"></i>
                     Contact Us <span class="notification badge">{{App\Models\ContactUs::where('status','Pending')->get()->count()}}</span>

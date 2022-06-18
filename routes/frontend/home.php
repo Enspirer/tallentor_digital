@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
+use App\Http\Controllers\Frontend\WebsiteCheckoutController;
 
 /*
  * Frontend Controllers
@@ -17,6 +18,8 @@ Route::post('contact_us/store', [ContactController::class, 'store'])->name('cont
 Route::post('contact_us_sidebar/store', [ContactController::class, 'contact_us_sidebar_store'])->name('contact_us_sidebar.store');
 Route::post('partnership/store', [ContactController::class, 'partnership_store'])->name('partnership.store');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
+
+Route::post('website/store', [WebsiteCheckoutController::class, 'website_store'])->name('website.store');
 
 Route::post('/aiz-uploader', [AizUploadController::class, 'show_uploader']);
 Route::post('/aiz-uploader/upload', [AizUploadController::class, 'upload']);

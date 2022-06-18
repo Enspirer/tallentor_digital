@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\SettingsController;
 use App\Http\Controllers\Backend\ModuleExplorerController;
 use App\Http\Controllers\Backend\ContactUsController;
 use App\Http\Controllers\Backend\PartnershipInqiriesController;
+use App\Http\Controllers\Backend\WebsiteCheckoutController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -52,6 +53,12 @@ Route::get('partnership_inqiries/edit/{id}', [PartnershipInqiriesController::cla
 Route::post('partnership_inqiries/update', [PartnershipInqiriesController::class, 'update'])->name('partnership_inqiries.update');
 Route::get('partnership_inqiries/delete/{id}', [PartnershipInqiriesController::class, 'destroy'])->name('partnership_inqiries.destroy');
 
+
+Route::get('webiste_checkout', [WebsiteCheckoutController::class, 'index'])->name('webiste_checkout.index');
+Route::get('webiste_checkout/getdetails', [WebsiteCheckoutController::class, 'getDetails'])->name('webiste_checkout.getDetails');
+Route::get('webiste_checkout/view/{id}', [WebsiteCheckoutController::class, 'view'])->name('webiste_checkout.view');
+Route::post('webiste_checkout/update', [WebsiteCheckoutController::class, 'update'])->name('webiste_checkout.update');
+Route::get('webiste_checkout/delete/{id}', [WebsiteCheckoutController::class, 'destroy'])->name('webiste_checkout.destroy');
 
 
 
