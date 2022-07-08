@@ -42,3 +42,28 @@ nav {
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    nav {
+        .nav-trigger {
+            display: block;
+        }
+
+        .contacts {
+            position: relative;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            transform: unset;
+            top: unset;
+            right: unset;
+            margin-top: 1rem;
+            transition: all .3s ease-in-out;
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
+}

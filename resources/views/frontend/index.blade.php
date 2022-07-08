@@ -48,6 +48,12 @@
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-12">
+                        <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12">
                         <div class="input-wrapper">
                             <div class="captcha-modal hide" id="captchaModal">
                                 <i class="bi bi-x-lg" captcha-modal-close></i>
@@ -56,7 +62,6 @@
                                         data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                                 <button type="submit" class="cta-btn btn-fill">Continue</button>
                             </div>
-                            <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                             <button type="button" class="cta-btn btn-fill" captcha-modal>Submit</button>
                         </div>
                     </div>
@@ -68,7 +73,7 @@
                 <div class="inner-wrapper">
                     <div class="content-block">
                         <div class="title">Mobile</div>
-                        <div class="tel">+971 583017648</div>
+                        <div class="tel">+971503743699</div>
                     </div>
                     <div class="head" cta-block-head>
                         <i class="bi bi-telephone-fill"></i>
@@ -79,7 +84,7 @@
                 <div class="inner-wrapper">
                     <div class="content-block">
                         <div class="title">WhatsApp</div>
-                        <div class="tel">+971 583017648</div>
+                        <div class="tel">+971503743699</div>
                     </div>
                     <div class="head" cta-block-head>
                         <i class="bi bi-whatsapp"></i>
@@ -112,6 +117,9 @@
                                         <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                                     </div>
                                     <div class="col-12">
+                                        <textarea name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
                                         <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                                     </div>
                                     <div class="col-12">
@@ -134,7 +142,7 @@
 
     <section class="home-services">
         <div class="container">
-            <div class="test-web-block">
+            <!-- <div class="test-web-block">
                 <div class="inner-wrapper">
                     <div class="title">Test your website for FREE</div>
                     <p>Supercharged analysis & monitoring tools</p>
@@ -148,38 +156,50 @@
                     </form>
                 </div>
                 <img src="images/landing-page/home/particle.svg" alt="particle">
-            </div>
+            </div> -->
             <div class="title">Our Services</div>
             <div class="service-blocks">
                 <div class="block">
-                    <img src="images/landing-page/home/dm.png" alt="digital marketing">
-                    <div class="card-title">Digital<br>Marketing</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/dm.png" alt="digital marketing">
+                        <div class="card-title">Digital<br>Marketing</div>
+                        <p>For any business to thrive in modern digital world, needs an exceptional digital strategy.</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/sd.png" alt="software development">
-                    <div class="card-title">Software<br>Development</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/sd.png" alt="software development">
+                        <div class="card-title">Software<br>Development</div>
+                        <p>Fully customized web based software to cater specific needs of your business</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/md.png" alt="mobile app development">
-                    <div class="card-title">Mobile App<br>Development</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/md.png" alt="mobile app development">
+                        <div class="card-title">Mobile App<br>Development</div>
+                        <p>Custom mobile apps and IoT solutions to interact customers with your services.</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/wad.png" alt="web application development">
-                    <div class="card-title">Web Application<br>Development</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/wad.png" alt="web application development">
+                        <div class="card-title">Web Application<br>Development</div>
+                        <p>From eCommerce solutions to comprehensive web portals to manage complex business needs</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/ww.png" alt="WhatsApp widget">
-                    <div class="card-title">WhatsApp<br>Widget</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/ww.png" alt="WhatsApp widget">
+                        <div class="card-title">WhatsApp<br>Widget</div>
+                        <p>Integrate whatsapp chat to your website with inquiry management system for effective communication</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <img src="images/landing-page/home/woa.png" alt="web optimizer app">
-                    <div class="card-title">Web Optimizer<br>App</div>
-                    <p>Experienced software developers to work individually</p>
+                    <a href="http://tallentordigital.com/services/marketplace" target="_blank" rel="noopener noreferrer">
+                        <img src="images/landing-page/home/woa.png" alt="web optimizer app">
+                        <div class="card-title">Web Optimizer<br>App</div>
+                        <p>Monitor and enhance the performance of your website with powerful optimizer app</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -187,20 +207,13 @@
 
     <section class="home-about">
         <div class="container">
-            <h2 class="mx-lg-5">About the Company</h2>
+            <h2 class="mx-lg-5">The Tallentor Digital Agency</h2>
             <div class="row">
                 <div class="col-lg-5 mx-lg-5">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Building a new brand or enhancing the existing customer base of a business is extremely challenging in competitive industries. With creatively crafted and wisely selected strategies any business can thrive in the digital space.</p>
                 </div>
                 <div class="col-lg-5">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    <p>Our trained specialists will make sure they understand your business goals precisely and Advise you with the best digital plan, from developing your website or mobile app, Social media marketing, SEO services, and lead generation campaigns with the best possible growth of your business.</p>
                 </div>
             </div>
         </div>
@@ -210,7 +223,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h3>Discuss a Partnership</h3>
+                    <h3>Let's get your project started</h3>
                     <form action="{{route('frontend.partnership.store')}}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
               
@@ -284,8 +297,6 @@
         </div>
     </div>
 @endif
-
-
 
 @endsection
 
