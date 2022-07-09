@@ -52,7 +52,7 @@ class ContactController extends Controller
             'message' => $request->message
         ];
 
-        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
+        \Mail::to([$request->email,'hello@tallentordigital.com'])->send(new ContactUsMail($details));
        
         return back()->with([
             'success' => 'success'
@@ -84,7 +84,7 @@ class ContactController extends Controller
             'message' => $request->message
         ];
 
-        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
+        \Mail::to([$request->email,'hello@tallentordigital.com'])->send(new ContactUsMail($details));
        
         return back()->with([
             'success' => 'success'
@@ -117,7 +117,7 @@ class ContactController extends Controller
             'message' => $request->message
         ];
 
-        \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new PartnershipInqiriesMail($details));
+        \Mail::to([$request->email,'hello@tallentordigital.com'])->send(new PartnershipInqiriesMail($details));
        
         return back()->with([
             'success' => 'success'
