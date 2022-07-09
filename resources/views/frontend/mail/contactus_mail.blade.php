@@ -36,14 +36,22 @@
                     <h1 style="font-size:20px;margin:0 0 20px 0;font-family:Arial,sans-serif;">Tallentor Digital - Contact Us</h1>
                   </td>
                   <td style="padding:0 0 30px 0;color:#153643;" align="right">
-                    <img src="{{url('images/logo/tallentor.svg')}}" style="width:100%; max-width:60px; margin:0 0 20px 0;">                    
+                    <img src="{{url('images/logo/tallentor.png')}}" style="max-width:60px; margin:0 0 20px 0;">                    
                   </td>
                 </tr>
                 <tr>
                   <td style="padding:0 0 30px 0;color:#153643;">
                     <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Dear {{ $details['name'] }},</p>
-                    <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">We appreciate you contacting us. One of our member will get back in touch with you soon! Have a great day!</p>
+                    <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Thank you for contacting Tallentor Digital.</p>
+                    <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">One of our team members will get in touch with you shortly.</p>
+                    <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Regards,</p>
+                    <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Team Tallentor</p>
                   </td>
+                </tr>
+                <tr style="border-top: 3px solid #101E40;">
+                  <td style="padding:0 0 10px 0;color:#153643;" align="left">
+                    <p style="padding: 0.6rem 0; color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><b>Your Message</b></p>
+                  </td> 
                 </tr>
                 <tr>
                   <td style="padding:0;">
@@ -54,6 +62,7 @@
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Name:</p>
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Email Address:</p>
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Phone Number:</p>
+                          <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Message:</p>
                           <!-- <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="http://www.example.com" style="color:#ee4c50;text-decoration:underline;">Blandit ipsum volutpat sed</a></p> -->
                         </td>
                         <td style="padding:0;vertical-align:top;color:#153643;">
@@ -61,6 +70,7 @@
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">{{ $details['name'] }}</p>
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">{{ $details['email'] }}</p>
                           <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">{{ $details['phone_number'] }}</p>
+                          <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">{{ $details['message'] }}</p>
                           <!-- <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="http://www.example.com" style="color:#ee4c50;text-decoration:underline;">In tempus felis blandit</a></p> -->
                         </td>
                       </tr>
@@ -75,9 +85,7 @@
               <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px;font-family:Arial,sans-serif;">
                 <tr>
                   <td style="padding:0;width:50%;" align="center">
-                    <p style="margin:0;font-size:20px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
-                      Tallentor Digital - Contact Us &reg;
-                    </p>
+                      <a href="www.tallentordigital.com" style="margin:0;font-size:20px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff; text-decoration:none!important;">www.tallentordigital.com</a>
                   </td>
                   <!-- <td style="padding:0;width:50%;" align="right">
                     <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">

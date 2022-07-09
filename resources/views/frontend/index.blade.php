@@ -51,7 +51,7 @@
                         <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                     </div>
                     <div class="col-12">
-                        <textarea name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
                     </div>
                     <div class="col-12">
                         <div class="input-wrapper">
@@ -117,7 +117,7 @@
                                         <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                                     </div>
                                     <div class="col-12">
-                                        <textarea name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>

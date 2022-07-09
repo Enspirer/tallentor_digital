@@ -40,6 +40,7 @@ class ContactController extends Controller
         $add->name=$request->name;
         $add->email=$request->email;
         $add->phone_number=$request->contact;
+        $add->message=$request->message;
         $add->status='Pending'; 
 
         $add->save();
@@ -47,7 +48,8 @@ class ContactController extends Controller
         $details = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone_number' => $request->contact
+            'phone_number' => $request->contact,
+            'message' => $request->message
         ];
 
         \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
@@ -70,6 +72,7 @@ class ContactController extends Controller
         $add->name=$request->name;
         $add->email=$request->email;
         $add->phone_number=$request->contact;
+        $add->message=$request->message;
         $add->status='Pending'; 
 
         $add->save();
@@ -77,7 +80,8 @@ class ContactController extends Controller
         $details = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone_number' => $request->contact
+            'phone_number' => $request->contact,
+            'message' => $request->message
         ];
 
         \Mail::to([$request->email,'nihsaan.enspirer@gmail.com'])->send(new ContactUsMail($details));
