@@ -48,7 +48,7 @@
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-12">
-                        <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
+                        <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                     </div>
                     <div class="col-12">
                         <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
@@ -114,7 +114,7 @@
                                         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
+                                        <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                                     </div>
                                     <div class="col-12">
                                         <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
@@ -238,7 +238,7 @@
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                             </div>
                             <div class="col-12">
-                                <input type="number" class="form-control" id="contact" name="contact" placeholder="Contact" required>
+                                <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact" required>
                             </div>
                             <div class="col-12">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
