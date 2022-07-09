@@ -508,6 +508,17 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .home-services {
+
+        .service-blocks {
+            .block {
+                flex: 0 0 35%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     .home-hero {
 
@@ -625,9 +636,17 @@
     }
 
     .home-services {
+        &::before {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 3rem;
+        }
+
         .service-blocks {
             .block {
-                flex: 0 0 50%;
+                flex: 0 0 75%;
                 text-align: center;
             }
         }

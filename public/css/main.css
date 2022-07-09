@@ -384,6 +384,11 @@
     transform: translate3d(-8rem, 4rem, 0);
   }
 }
+@media screen and (max-width: 1199px) {
+  .home-services .service-blocks .block {
+    flex: 0 0 35%;
+  }
+}
 @media screen and (max-width: 991px) {
   .home-hero .form-block {
     width: 70%;
@@ -471,8 +476,14 @@
     display: none;
   }
 
+  .home-services::before {
+    width: 100%;
+  }
+  .home-services .title {
+    font-size: 3rem;
+  }
   .home-services .service-blocks .block {
-    flex: 0 0 50%;
+    flex: 0 0 75%;
     text-align: center;
   }
 
