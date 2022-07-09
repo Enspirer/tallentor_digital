@@ -36,7 +36,7 @@
                     <h1 style="font-size:20px;margin:0 0 20px 0;font-family:Arial,sans-serif;">Tallentor Digital - Partnership Inqiries</h1>
                   </td>
                   <td style="padding:0 0 30px 0;color:#153643;" align="right">
-                    <img src="{{url('images/logo/tallentor.png')}}" style="max-width:100px; margin:0 0 20px 0;">                    
+                    <img src="{{url('images/logo/tallentor.png')}}" style="max-width:180px; margin:0 0 20px 0;">                    
                   </td>
                 </tr>
                 <tr>
