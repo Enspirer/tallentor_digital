@@ -40,7 +40,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding:0 0 30px 0;color:#153643;">
+                  <td style="padding:0 0 30px 0;color:#153643;" colspan="2">
                     <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Dear {{ $details['name'] }},</p>
                     <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">Thank you for contacting Tallentor Digital.</p>
                     <p style="color: black; margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">One of our team members will get in touch with you shortly.</p>
@@ -54,7 +54,7 @@
                   </td> 
                 </tr>
                 <tr>
-                  <td style="padding:0;">
+                  <td style="padding:0;" colspan="2">
                     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                       <tr>
                         <td style="width:30%;padding:0;vertical-align:top;color:#153643;">
