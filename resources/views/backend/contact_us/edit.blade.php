@@ -30,6 +30,10 @@
                                                     <td style="font-weight: 600; font-size:16px;">Phone Number:</td>
                                                     <td style="font-size:16px;">{{ $contact_us->phone_number }}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td style="font-weight: 600; font-size:16px;">Message:</td>
+                                                    <td style="font-size:16px;">{{ $contact_us->message }}</td>
+                                                </tr>
                                             </tbody>                                            
                                         </table>
                                     </div>                                            
